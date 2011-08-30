@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Code for the CT Event feature.
+ */
+
+include_once('cmtls_event.features.inc');
+
+/**
+ * Implements hook_cmtls_app
+ * 
+ * @see cmtls.module
+ */
+function cmtls_event_cmtls_app() {
+  return array(
+    'cmtls_event' => array(
+      'title' => t('Events'),
+      'description' => t('Events with a ...'),
+    ),
+  );
+}
+
