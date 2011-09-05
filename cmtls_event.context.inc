@@ -91,9 +91,9 @@ function cmtls_event_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-cmtls_events_calendar-block_1' => array(
+        'views-cmtls_events_calendar-block_3' => array(
           'module' => 'views',
-          'delta' => 'cmtls_events_calendar-block_1',
+          'delta' => 'cmtls_events_calendar-block_3',
           'region' => 'content',
           'weight' => '-10',
         ),
