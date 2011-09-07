@@ -16,6 +16,9 @@ function cmtls_event_cmtls_app() {
     'cmtls_event' => array(
       'title' => t('Events'),
       'description' => t('Events with a ...'),
+      'node types' => array(
+        'cmtls_event' => t('Event'),
+      ),
     ),
   );
 }
