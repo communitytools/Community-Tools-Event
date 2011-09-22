@@ -451,7 +451,7 @@ function cmtls_event_views_default_views() {
   $view = new view;
   $view->name = 'cmtls_events_calendar';
   $view->description = 'A multi-dimensional calendar view with back/next navigation.';
-  $view->tag = 'Calendar';
+  $view->tag = 'cmtls';
   $view->base_table = 'node';
   $view->human_name = 'CT Events calendar';
   $view->core = 7;
