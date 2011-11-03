@@ -1,6 +1,7 @@
 core = "7.x"
 dependencies[] = "cmtls"
 dependencies[] = "calendar"
+dependencies[] = "date_api"
 dependencies[] = "date"
 dependencies[] = "date_views"
 description = "Community Tools Event"
