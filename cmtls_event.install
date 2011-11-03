@@ -1,0 +1,120 @@
+<?php
+
+/**
+ * Implements hook_install()
+ */
+function cmtls_event_install() {
+  // add post node fields
+  og_create_field(OG_AUDIENCE_FIELD, 'node', 'cmtls_event');
+  og_create_field(OG_CONTENT_ACCESS_FIELD, 'node', 'cmtls_event');
+  cmtls_create_field('field_cmtls_application', 'cmtls_event');
+  cmtls_create_field('field_cmtls_location', 'cmtls_event');
+  cmtls_create_field('field_cmtls_tags', 'cmtls_event');
+  cmtls_create_field('field_cmtls_attachments', 'cmtls_event');
+  cmtls_create_field(array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_cmtls_event_date',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'module' => 'date',
+      'settings' => array(
+        'enddate' => 1,
+        'enddate_required' => 0,
+        'granularity' => array(
+          'day' => 'day',
+          'hour' => 'hour',
+          'minute' => 'minute',
+          'month' => 'month',
+          'second' => 0,
+          'year' => 'year',
+        ),
+        'repeat' => 0,
+        'timezone_db' => 'UTC',
+        'todate' => 'optional',
+        'tz_handling' => 'site',
+      ),
+      'translatable' => '0',
+      'type' => 'date',
+    ),
+    'field_instance' => array(
+      'bundle' => 'cmtls_event',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'The start and the end date and time of the event',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'date',
+          'settings' => array(
+            'format_type' => 'medium',
+            'fromto' => 'both',
+            'multiple_from' => '',
+            'multiple_number' => '',
+            'multiple_to' => '',
+            'show_repeat_rule' => 'show',
+          ),
+          'type' => 'date_default',
+          'weight' => '0',
+        ),
+        'teaser' => array(
+          'label' => 'hidden',
+          'module' => 'date',
+          'settings' => array(
+            'format_type' => 'medium',
+            'fromto' => 'both',
+            'multiple_from' => '',
+            'multiple_number' => '',
+            'multiple_to' => '',
+            'show_repeat_rule' => 'show',
+          ),
+          'type' => 'date_default',
+          'weight' => '0',
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_cmtls_event_date',
+      'label' => 'Date',
+      'required' => 0,
+      'settings' => array(
+        'default_value' => 'now',
+        'default_value2' => 'same',
+        'default_value_code' => '',
+        'default_value_code2' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'date',
+        'settings' => array(
+          'increment' => '15',
+          'input_format' => 'd.m.Y - H:i:s',
+          'input_format_custom' => '',
+          'label_position' => 'above',
+          'repeat_collapsed' => 0,
+          'text_parts' => array(),
+          'year_range' => '-3:+3',
+        ),
+        'type' => 'date_select',
+        'weight' => '2',
+      ),
+    ),
+  ), 'cmtls_event');
+  node_add_body_field((object)array('type' => 'cmtls_event'), 'Content');
+  variable_set('comment_anonymous_cmtls_event', 0);
+  variable_set('comment_cmtls_event', 2);
+  variable_set('comment_default_mode_cmtls_event', 0);
+  variable_set('comment_default_per_page_cmtls_event', 50);
+  variable_set('comment_form_location_cmtls_event', 1);
+  variable_set('comment_preview_cmtls_event', 1);
+  variable_set('comment_subject_field_cmtls_event', 0);
+  variable_set('menu_options_cmtls_event', array('menu-cmtls'));
+  variable_set('menu_parent_cmtls_event', 'menu-cmtls:0');
+  variable_set('node_options_cmtls_event', array('status'));
+  variable_set('node_preview_cmtls_event', 1);
+  variable_set('node_submitted_cmtls_event', 1);
+  variable_set('og_group_type_cmtls_event', 'omitted');
+}

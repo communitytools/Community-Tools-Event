@@ -1,10 +1,50 @@
 <?php
 /**
- * @file
- * Code for the CT Event feature.
+ * Context API implementations
  */
+include_once('cmtls_event.contexts.inc');
 
-include_once('cmtls_event.features.inc');
+/**
+ * Context API implementations
+ */
+include_once('cmtls_event.views.inc');
+
+/**
+ * Implementation of hook_ctools_plugin_api().
+ */
+function cmtls_event_ctools_plugin_api() {
+  list($module, $api) = func_get_args();
+  if ($module == "context" && $api == "context") {
+    return array("version" => "3");
+  }
+}
+
+/**
+ * Implementation of hook_views_api().
+ */
+function cmtls_event_views_api() {
+  list($module, $api) = func_get_args();
+  if ($module == "views" && $api == "views_default") {
+    return array("version" => "3.0");
+  }
+}
+
+/**
+ * Implementation of hook_node_info().
+ */
+function cmtls_event_node_info() {
+  $items = array(
+    'cmtls_event' => array(
+      'name' => t('CT Event'),
+      'base' => 'node_content',
+      'description' => t('Community Tools event'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+  );
+  return $items;
+}
 
 /**
  * Implements hook_cmtls_app
