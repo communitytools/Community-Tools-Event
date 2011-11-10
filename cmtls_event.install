@@ -6,11 +6,61 @@
 function cmtls_event_install() {
   // add post node fields
   og_create_field(OG_AUDIENCE_FIELD, 'node', 'cmtls_event');
+  $instance = field_info_instance('node', OG_AUDIENCE_FIELD, 'cmtls_event');
+  foreach ($instance['display'] as &$display) {
+    $display['type'] = 'hidden';
+  }
+  $instance['widget']['weight'] = 8;
+  field_update_instance($instance);
+  
   og_create_field(OG_CONTENT_ACCESS_FIELD, 'node', 'cmtls_event');
-  cmtls_create_field('field_cmtls_application', 'cmtls_event');
-  cmtls_create_field('field_cmtls_location', 'cmtls_event');
-  cmtls_create_field('field_cmtls_tags', 'cmtls_event');
-  cmtls_create_field('field_cmtls_attachments', 'cmtls_event');
+  $instance = field_info_instance('node', OG_CONTENT_ACCESS_FIELD, 'cmtls_event');
+  foreach ($instance['display'] as &$display) {
+    $display['type'] = 'hidden';
+  }
+  $instance['widget']['weight'] = 6;
+  field_update_instance($instance);
+  
+  cmtls_create_field(array(
+    'field_config' => array(
+      'field_name' => 'field_cmtls_application'
+    ),
+    'field_instance' => array(
+      'bundle' => 'cmtls_event',
+      'widget' => array('weight' => 7),
+    ),
+  ));
+  
+  cmtls_create_field(array(
+    'field_config' => array(
+      'field_name' => 'field_cmtls_location'
+    ),
+    'field_instance' => array(
+      'bundle' => 'cmtls_event',
+      'widget' => array('weight' => 4),
+    ),
+  ));
+  
+  cmtls_create_field(array(
+    'field_config' => array(
+      'field_name' => 'field_cmtls_tags'
+    ),
+    'field_instance' => array(
+      'bundle' => 'cmtls_event',
+      'widget' => array('weight' => 1),
+    ),
+  ));
+  
+  cmtls_create_field(array(
+    'field_config' => array(
+      'field_name' => 'field_cmtls_attachments'
+    ),
+    'field_instance' => array(
+      'bundle' => 'cmtls_event',
+      'widget' => array('weight' => 5),
+    ),
+  ));
+  
   cmtls_create_field(array(
     'field_config' => array(
       'active' => '1',
@@ -99,11 +149,15 @@ function cmtls_event_install() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_select',
-        'weight' => '2',
+        'weight' => 2,
       ),
     ),
-  ), 'cmtls_event');
-  node_add_body_field((object)array('type' => 'cmtls_event'), 'Content');
+  ));
+  
+  $instance = node_add_body_field((object)array('type' => 'cmtls_event'), 'Content');
+  $instance['widget']['weight'] = 3;
+  field_update_instance($instance);
+  
   variable_set('comment_anonymous_cmtls_event', 0);
   variable_set('comment_cmtls_event', 2);
   variable_set('comment_default_mode_cmtls_event', 0);
