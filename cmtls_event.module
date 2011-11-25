@@ -1,13 +1,4 @@
 <?php
-/**
- * Context API implementations
- */
-include_once('cmtls_event.contexts.inc');
-
-/**
- * Context API implementations
- */
-include_once('cmtls_event.views.inc');
 
 /**
  * Implementation of hook_ctools_plugin_api().
@@ -38,9 +29,9 @@ function cmtls_event_views_api() {
 function cmtls_event_node_info() {
   $items = array(
     'cmtls_event' => array(
-      'name' => t('CT Event'),
+      'name' => t('Event'),
       'base' => 'node_content',
-      'description' => t('Community Tools event'),
+      'description' => t('Event in Community Tools groups'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

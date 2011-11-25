@@ -85,7 +85,7 @@ function cmtls_event_install() {
         'repeat' => 0,
         'timezone_db' => 'UTC',
         'todate' => 'optional',
-        'tz_handling' => 'site',
+        'tz_handling' => 'utc',
       ),
       'translatable' => '0',
       'type' => 'date',
@@ -162,7 +162,7 @@ function cmtls_event_install() {
           'text_parts' => array(),
           'year_range' => '-3:+3',
         ),
-        'type' => 'date_select',
+        'type' => 'date_popup',
         'weight' => 2,
       ),
     ),
@@ -189,8 +189,8 @@ function cmtls_event_install() {
   variable_set('comment_form_location_cmtls_event', 1);
   variable_set('comment_preview_cmtls_event', 1);
   variable_set('comment_subject_field_cmtls_event', 0);
-  variable_set('menu_options_cmtls_event', array('menu-cmtls'));
-  variable_set('menu_parent_cmtls_event', 'menu-cmtls:0');
+  variable_set('menu_options_cmtls_event', array('menu-cmtls-groups'));
+  variable_set('menu_parent_cmtls_event', 'menu-cmtls-groups:0');
   variable_set('node_options_cmtls_event', array('status'));
   variable_set('node_preview_cmtls_event', 1);
   variable_set('node_submitted_cmtls_event', 1);
