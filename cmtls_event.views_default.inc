@@ -324,6 +324,36 @@ function cmtls_event_views_default_views() {
     'field_data_field_cmtls_event_date.field_cmtls_event_date_value' => 'field_data_field_cmtls_event_date.field_cmtls_event_date_value',
     'field_data_field_cmtls_event_date.field_cmtls_event_date_value2' => 'field_data_field_cmtls_event_date.field_cmtls_event_date_value2',
   );
+  $translatables['cmtls_events'] = array(
+    t('Master'),
+    t('Events'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('group membership'),
+    t('field_cmtls_application'),
+    t('Date'),
+    t('Global page'),
+    t('Page with all events in all groups'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('<h2>Today</h2>'),
+    t('All tomorrow attachment'),
+    t('Tomorrow'),
+    t('All events tomorrow'),
+    t('<h2>Tomorrow</h2>'),
+    t('All upcoming attachment'),
+    t('Upcoming'),
+    t('All global events after tomorrow'),
+    t('<h2>Upcoming</h2>'),
+    t('Application content block'),
+    t('All events in an application'),
+    t('All'),
+  );
   $export['cmtls_events'] = $view;
 
   return $export;
