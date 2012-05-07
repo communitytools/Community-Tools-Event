@@ -146,7 +146,6 @@ function cmtls_event_views_default_views() {
   $handler->display->display_options['filters']['field_cmtls_event_date_value_1']['operator'] = '<';
   $handler->display->display_options['filters']['field_cmtls_event_date_value_1']['default_date'] = 'now + 1 day';
   $handler->display->display_options['path'] = 'cmtls/events';
-  $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Events';
   $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'main-menu';
