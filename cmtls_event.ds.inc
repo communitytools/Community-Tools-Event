@@ -43,12 +43,12 @@ function cmtls_event_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'post_date' => array(
-      'weight' => '0',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'ds_post_date_short',
     ),
     'author' => array(
-      'weight' => '0',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -148,20 +148,18 @@ function cmtls_event_ds_layout_settings_info() {
     'hide_sidebars' => 0,
     'regions' => array(
       'left_column' => array(
-        0 => 'author',
-        1 => 'ds_user_picture',
-      ),
-      'footer' => array(
-        0 => 'post_date',
+        0 => 'ds_user_picture',
       ),
       'middle' => array(
-        0 => 'comment_body',
+        0 => 'author',
+        1 => 'post_date',
+        2 => 'comment_body',
       ),
     ),
     'fields' => array(
-      'author' => 'left_column',
       'ds_user_picture' => 'left_column',
-      'post_date' => 'footer',
+      'author' => 'middle',
+      'post_date' => 'middle',
       'comment_body' => 'middle',
     ),
     'classes' => array(),

@@ -91,6 +91,12 @@ function cmtls_event_context_default_contexts() {
           'region' => 'content',
           'weight' => '-10',
         ),
+        'views-d9e168f4a7cca184af1d56e5bf3f1a03' => array(
+          'module' => 'views',
+          'delta' => 'd9e168f4a7cca184af1d56e5bf3f1a03',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
+        ),
       ),
     ),
   );

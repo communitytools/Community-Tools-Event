@@ -197,10 +197,9 @@ function cmtls_event_views_default_views() {
   $handler->display->display_options['filters']['field_cmtls_event_date_value_1']['default_date'] = 'now + 2 day';
   $handler->display->display_options['displays'] = array(
     'cmtls_event_global_page' => 'cmtls_event_global_page',
+    'cmtls_event_content_list_block' => 'cmtls_event_content_list_block',
     'default' => 0,
-    'block' => 0,
-    'cmtls_event_all_today_block' => 0,
-    'block_2' => 0,
+    'cmtls_event_app_wall_block' => 0,
   );
   $handler->display->display_options['attachment_position'] = 'after';
   $handler->display->display_options['inherit_pager'] = 1;
@@ -245,18 +244,18 @@ function cmtls_event_views_default_views() {
   $handler->display->display_options['filters']['field_cmtls_event_date_value']['default_date'] = 'now + 1 day';
   $handler->display->display_options['displays'] = array(
     'cmtls_event_global_page' => 'cmtls_event_global_page',
+    'cmtls_event_content_list_block' => 'cmtls_event_content_list_block',
     'default' => 0,
-    'block' => 0,
-    'cmtls_event_all_today_block' => 0,
-    'block_2' => 0,
+    'cmtls_event_app_wall_block' => 0,
   );
   $handler->display->display_options['attachment_position'] = 'after';
   $handler->display->display_options['inherit_pager'] = 1;
   $handler->display->display_options['render_pager'] = 1;
 
-  /* Display: Application content block */
-  $handler = $view->new_display('block', 'Application content block', 'cmtls_event_app_wall_block');
-  $handler->display->display_options['display_description'] = 'All events in an application';
+  /* Display: Application content calendar block */
+  $handler = $view->new_display('block', 'Application content calendar block', 'cmtls_event_app_wall_block');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['display_description'] = 'All events in an application as calendar';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'date_views_pager';
   $handler->display->display_options['pager']['options']['link_format'] = 'clean';
@@ -324,6 +323,71 @@ function cmtls_event_views_default_views() {
     'field_data_field_cmtls_event_date.field_cmtls_event_date_value' => 'field_data_field_cmtls_event_date.field_cmtls_event_date_value',
     'field_data_field_cmtls_event_date.field_cmtls_event_date_value2' => 'field_data_field_cmtls_event_date.field_cmtls_event_date_value2',
   );
+
+  /* Display: Application content list block  */
+  $handler = $view->new_display('block', 'Application content list block ', 'cmtls_event_content_list_block');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Application (field_cmtls_application) */
+  $handler->display->display_options['arguments']['field_cmtls_application_nid']['id'] = 'field_cmtls_application_nid';
+  $handler->display->display_options['arguments']['field_cmtls_application_nid']['table'] = 'field_data_field_cmtls_application';
+  $handler->display->display_options['arguments']['field_cmtls_application_nid']['field'] = 'field_cmtls_application_nid';
+  $handler->display->display_options['arguments']['field_cmtls_application_nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_cmtls_application_nid']['exception']['value'] = '';
+  $handler->display->display_options['arguments']['field_cmtls_application_nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['field_cmtls_application_nid']['default_argument_skip_url'] = 0;
+  $handler->display->display_options['arguments']['field_cmtls_application_nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_cmtls_application_nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_cmtls_application_nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_cmtls_application_nid']['break_phrase'] = 0;
+  $handler->display->display_options['arguments']['field_cmtls_application_nid']['not'] = 0;
+  /* Contextual filter: OG membership: Group gid */
+  $handler->display->display_options['arguments']['group']['id'] = 'group';
+  $handler->display->display_options['arguments']['group']['table'] = 'og_membership';
+  $handler->display->display_options['arguments']['group']['field'] = 'group';
+  $handler->display->display_options['arguments']['group']['relationship'] = 'og_membership_rel';
+  $handler->display->display_options['arguments']['group']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['group']['exception']['value'] = '';
+  $handler->display->display_options['arguments']['group']['default_argument_type'] = 'og_context';
+  $handler->display->display_options['arguments']['group']['default_argument_skip_url'] = 0;
+  $handler->display->display_options['arguments']['group']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['group']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['group']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['group']['break_phrase'] = 0;
+  $handler->display->display_options['arguments']['group']['not'] = 0;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 0;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'cmtls_event' => 'cmtls_event',
+  );
+  /* Filter criterion: Content: Date -  start date (field_cmtls_event_date) */
+  $handler->display->display_options['filters']['field_cmtls_event_date_value']['id'] = 'field_cmtls_event_date_value';
+  $handler->display->display_options['filters']['field_cmtls_event_date_value']['table'] = 'field_data_field_cmtls_event_date';
+  $handler->display->display_options['filters']['field_cmtls_event_date_value']['field'] = 'field_cmtls_event_date_value';
+  $handler->display->display_options['filters']['field_cmtls_event_date_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_cmtls_event_date_value']['default_date'] = 'now';
+  /* Filter criterion: Content: Date -  start date (field_cmtls_event_date) */
+  $handler->display->display_options['filters']['field_cmtls_event_date_value_1']['id'] = 'field_cmtls_event_date_value_1';
+  $handler->display->display_options['filters']['field_cmtls_event_date_value_1']['table'] = 'field_data_field_cmtls_event_date';
+  $handler->display->display_options['filters']['field_cmtls_event_date_value_1']['field'] = 'field_cmtls_event_date_value';
+  $handler->display->display_options['filters']['field_cmtls_event_date_value_1']['operator'] = '<';
+  $handler->display->display_options['filters']['field_cmtls_event_date_value_1']['default_date'] = 'now + 1 day';
   $translatables['cmtls_events'] = array(
     t('Master'),
     t('Events'),
@@ -350,9 +414,10 @@ function cmtls_event_views_default_views() {
     t('Upcoming'),
     t('All global events after tomorrow'),
     t('<h2>Upcoming</h2>'),
-    t('Application content block'),
-    t('All events in an application'),
+    t('Application content calendar block'),
+    t('All events in an application as calendar'),
     t('All'),
+    t('Application content list block '),
   );
   $export['cmtls_events'] = $view;
 
