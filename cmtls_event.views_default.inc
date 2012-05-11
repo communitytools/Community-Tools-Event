@@ -332,6 +332,13 @@ function cmtls_event_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Result summary */
+  $handler->display->display_options['empty']['result']['id'] = 'result';
+  $handler->display->display_options['empty']['result']['table'] = 'views';
+  $handler->display->display_options['empty']['result']['field'] = 'result';
+  $handler->display->display_options['empty']['result']['empty'] = FALSE;
+  $handler->display->display_options['empty']['result']['content'] = '';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Application (field_cmtls_application) */
   $handler->display->display_options['arguments']['field_cmtls_application_nid']['id'] = 'field_cmtls_application_nid';
