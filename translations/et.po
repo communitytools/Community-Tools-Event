@@ -14,8 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2012-05-25 16:38+0300\n"
-"PO-Revision-Date: 2012-05-25 16:38+0300\n"
+"POT-Creation-Date: 2012-05-28 15:25+0300\n"
+"PO-Revision-Date: 2012-05-28 15:25+0300\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Estonian <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: cmtls_event.features.field.inc:811
 msgid "Application"
-msgstr ""
+msgstr "Tööriist"
 
 #: cmtls_event.features.field.inc:812
 msgid "Attachments"
@@ -57,7 +57,7 @@ msgstr "Kirjeldus"
 
 #: cmtls_event.features.field.inc:816
 msgid "Group content visibility"
-msgstr ""
+msgstr "Nähtavus"
 
 #: cmtls_event.features.field.inc:817
 msgid "Groups audience"
@@ -93,7 +93,7 @@ msgstr ""
 
 #: cmtls_event.views_default.inc:399 cmtls_event.module:13
 msgid "Events"
-msgstr ""
+msgstr "Sündmused"
 
 #: cmtls_event.views_default.inc:400
 msgid "more"
