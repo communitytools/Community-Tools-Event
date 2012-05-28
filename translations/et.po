@@ -1,0 +1,217 @@
+# $Id$
+#
+# Estonian translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  cmtls_event.context.inc: n/a
+#  cmtls_event.features.field.inc: n/a
+#  cmtls_event.views_default.inc: n/a
+#  cmtls_event.features.inc: n/a
+#  cmtls_event.module: n/a
+#  cmtls_event.info: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-05-25 16:38+0300\n"
+"PO-Revision-Date: 2012-05-25 16:38+0300\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Estonian <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: cmtls_event.context.inc:57;107
+msgid "CT event"
+msgstr ""
+
+#: cmtls_event.context.inc:58
+msgid "Community tools single event page"
+msgstr ""
+
+#: cmtls_event.context.inc:108
+msgid "Community Tools events calendar"
+msgstr ""
+
+#: cmtls_event.features.field.inc:811
+msgid "Application"
+msgstr ""
+
+#: cmtls_event.features.field.inc:812
+msgid "Attachments"
+msgstr "Manused"
+
+#: cmtls_event.features.field.inc:813
+msgid "Comment"
+msgstr "Kommentaar"
+
+#: cmtls_event.features.field.inc:814 cmtls_event.views_default.inc:408
+msgid "Date"
+msgstr "Kuupäev"
+
+#: cmtls_event.features.field.inc:815
+msgid "Description"
+msgstr "Kirjeldus"
+
+#: cmtls_event.features.field.inc:816
+msgid "Group content visibility"
+msgstr ""
+
+#: cmtls_event.features.field.inc:817
+msgid "Groups audience"
+msgstr ""
+
+#: cmtls_event.features.field.inc:818
+msgid "Location"
+msgstr "Asukoht"
+
+#: cmtls_event.features.field.inc:819
+msgid "Tags"
+msgstr "Sildid"
+
+#: cmtls_event.features.field.inc:820
+msgid "The start and the end date and time of the event"
+msgstr ""
+
+#: cmtls_event.features.inc:41 cmtls_event.module:16
+msgid "Event"
+msgstr "Sündmus"
+
+#: cmtls_event.features.inc:43
+msgid "Event in Community Tools groups"
+msgstr ""
+
+#: cmtls_event.features.inc:45
+msgid "Title"
+msgstr "Pealkiri"
+
+#: cmtls_event.views_default.inc:398
+msgid "Master"
+msgstr ""
+
+#: cmtls_event.views_default.inc:399 cmtls_event.module:13
+msgid "Events"
+msgstr ""
+
+#: cmtls_event.views_default.inc:400
+msgid "more"
+msgstr "veel"
+
+#: cmtls_event.views_default.inc:401
+msgid "Apply"
+msgstr "Rakenda"
+
+#: cmtls_event.views_default.inc:402
+msgid "Reset"
+msgstr "Lähtesta"
+
+#: cmtls_event.views_default.inc:403
+msgid "Sort by"
+msgstr "Sorteerimise alus"
+
+#: cmtls_event.views_default.inc:404
+msgid "Asc"
+msgstr "Kasvav"
+
+#: cmtls_event.views_default.inc:405
+msgid "Desc"
+msgstr "Kahanev"
+
+#: cmtls_event.views_default.inc:406
+msgid "group membership"
+msgstr ""
+
+#: cmtls_event.views_default.inc:407
+msgid "field_cmtls_application"
+msgstr ""
+
+#: cmtls_event.views_default.inc:409
+msgid "Global page"
+msgstr ""
+
+#: cmtls_event.views_default.inc:410
+msgid "Page with all events in all groups"
+msgstr ""
+
+#: cmtls_event.views_default.inc:411
+msgid "Items per page"
+msgstr "Kirjeid lehel"
+
+#: cmtls_event.views_default.inc:412
+msgid "- All -"
+msgstr "- Kõik -"
+
+#: cmtls_event.views_default.inc:413
+msgid "Offset"
+msgstr "Nihe"
+
+#: cmtls_event.views_default.inc:414
+msgid "<h2>Today</h2>"
+msgstr ""
+
+#: cmtls_event.views_default.inc:415
+msgid "All tomorrow attachment"
+msgstr ""
+
+#: cmtls_event.views_default.inc:416
+msgid "Tomorrow"
+msgstr ""
+
+#: cmtls_event.views_default.inc:417
+msgid "All events tomorrow"
+msgstr ""
+
+#: cmtls_event.views_default.inc:418
+msgid "<h2>Tomorrow</h2>"
+msgstr ""
+
+#: cmtls_event.views_default.inc:419
+msgid "All upcoming attachment"
+msgstr ""
+
+#: cmtls_event.views_default.inc:420
+msgid "Upcoming"
+msgstr "Saabuvad"
+
+#: cmtls_event.views_default.inc:421
+msgid "All global events after tomorrow"
+msgstr ""
+
+#: cmtls_event.views_default.inc:422
+msgid "<h2>Upcoming</h2>"
+msgstr ""
+
+#: cmtls_event.views_default.inc:423
+msgid "Application content calendar block"
+msgstr ""
+
+#: cmtls_event.views_default.inc:424
+msgid "All events in an application as calendar"
+msgstr ""
+
+#: cmtls_event.views_default.inc:425
+msgid "All"
+msgstr "Kõik"
+
+#: cmtls_event.views_default.inc:426
+msgid "Application content list block "
+msgstr ""
+
+#: cmtls_event.module:14
+msgid "Events with a ..."
+msgstr ""
+
+#: cmtls_event.info:0
+msgid "CT Event"
+msgstr ""
+
+#: cmtls_event.info:0
+msgid "Community Tools events"
+msgstr ""
+
+#: cmtls_event.info:0
+msgid "Community Tools"
+msgstr ""
+
