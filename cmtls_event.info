@@ -56,5 +56,6 @@ features[node][] = cmtls_event
 features[rules_config][] = rules_cmtls_event_app_notifications
 features[rules_config][] = rules_cmtls_event_follow_own_thread
 features[rules_config][] = rules_cmtls_event_thread_notifications
+features[node][] = cmtls_event
 features[rules_config][] = rules_cmtls_event_views_cache
 features[views_view][] = cmtls_events
