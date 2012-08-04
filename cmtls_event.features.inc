@@ -34,6 +34,45 @@ function cmtls_event_views_api() {
  */
 function cmtls_event_flag_default_flags() {
   $flags = array();
+  // Exported flag: "Attending".
+  $flags['cmtls_event_attending'] = array(
+    'content_type' => 'node',
+    'title' => 'Attending',
+    'global' => '0',
+    'types' => array(
+      0 => 'cmtls_event',
+    ),
+    'flag_short' => 'Going',
+    'flag_long' => 'Mark me as attending.',
+    'flag_message' => 'You are now marked as attending.',
+    'unflag_short' => 'Not going',
+    'unflag_long' => 'Mark me as not attending.',
+    'unflag_message' => 'You are no longer marked as attending.',
+    'unflag_denied_text' => '',
+    'link_type' => 'normal',
+    'roles' => array(
+      'flag' => array(
+        0 => '2',
+        1 => '3',
+      ),
+      'unflag' => array(
+        0 => '2',
+        1 => '3',
+      ),
+    ),
+    'weight' => 0,
+    'show_on_page' => 1,
+    'show_on_teaser' => 1,
+    'show_on_form' => 0,
+    'show_contextual_link' => FALSE,
+    'access_author' => '',
+    'i18n' => 0,
+    'module' => 'cmtls_event',
+    'locked' => array(
+      0 => 'name',
+    ),
+    'api_version' => 2,
+  );
   // Exported flag: "Follow".
   $flags['cmtls_event_follow'] = array(
     'content_type' => 'node',
