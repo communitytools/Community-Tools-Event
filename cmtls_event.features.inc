@@ -102,7 +102,7 @@ function cmtls_event_flag_default_flags() {
     'weight' => 0,
     'show_on_page' => 1,
     'show_on_teaser' => 0,
-    'show_on_form' => 1,
+    'show_on_form' => 0,
     'show_contextual_link' => FALSE,
     'access_author' => '',
     'i18n' => 0,
