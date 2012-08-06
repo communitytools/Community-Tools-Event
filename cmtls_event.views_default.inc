@@ -12,8 +12,8 @@ function cmtls_event_views_default_views() {
 
   $view = new view;
   $view->name = 'cmtls_event_attendees';
-  $view->description = '';
-  $view->tag = 'default';
+  $view->description = 'Shows attendees of an event';
+  $view->tag = 'cmtls';
   $view->base_table = 'users';
   $view->human_name = 'CT Event attendees';
   $view->core = 7;
