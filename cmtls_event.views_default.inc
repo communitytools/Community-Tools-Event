@@ -361,7 +361,7 @@ function cmtls_event_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = FALSE;
-  /* Relationship: Group membership: Node group membership */
+  /* Relationship: OG membership: OG membership from Node */
   $handler->display->display_options['relationships']['og_membership_rel']['id'] = 'og_membership_rel';
   $handler->display->display_options['relationships']['og_membership_rel']['table'] = 'node';
   $handler->display->display_options['relationships']['og_membership_rel']['field'] = 'og_membership_rel';
@@ -401,7 +401,7 @@ function cmtls_event_views_default_views() {
   $handler->display->display_options['sorts']['field_cmtls_event_date_value']['id'] = 'field_cmtls_event_date_value';
   $handler->display->display_options['sorts']['field_cmtls_event_date_value']['table'] = 'field_data_field_cmtls_event_date';
   $handler->display->display_options['sorts']['field_cmtls_event_date_value']['field'] = 'field_cmtls_event_date_value';
-  /* Contextual filter: OG membership: Group gid */
+  /* Contextual filter: OG membership: OG group gid */
   $handler->display->display_options['arguments']['group']['id'] = 'group';
   $handler->display->display_options['arguments']['group']['table'] = 'og_membership';
   $handler->display->display_options['arguments']['group']['field'] = 'group';
@@ -651,7 +651,7 @@ function cmtls_event_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: OG membership: Group gid */
+  /* Contextual filter: OG membership: OG group gid */
   $handler->display->display_options['arguments']['group']['id'] = 'group';
   $handler->display->display_options['arguments']['group']['table'] = 'og_membership';
   $handler->display->display_options['arguments']['group']['field'] = 'group';
@@ -709,7 +709,7 @@ function cmtls_event_views_default_views() {
   $handler->display->display_options['empty']['result']['empty'] = FALSE;
   $handler->display->display_options['empty']['result']['content'] = '';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: OG membership: Group gid */
+  /* Contextual filter: OG membership: OG group gid */
   $handler->display->display_options['arguments']['group']['id'] = 'group';
   $handler->display->display_options['arguments']['group']['table'] = 'og_membership';
   $handler->display->display_options['arguments']['group']['field'] = 'group';
@@ -797,7 +797,7 @@ function cmtls_event_views_default_views() {
   $handler->display->display_options['sorts']['field_cmtls_event_date_value']['field'] = 'field_cmtls_event_date_value';
   $handler->display->display_options['sorts']['field_cmtls_event_date_value']['order'] = 'DESC';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: OG membership: Group gid */
+  /* Contextual filter: OG membership: OG group gid */
   $handler->display->display_options['arguments']['group']['id'] = 'group';
   $handler->display->display_options['arguments']['group']['table'] = 'og_membership';
   $handler->display->display_options['arguments']['group']['field'] = 'group';
@@ -880,7 +880,7 @@ function cmtls_event_views_default_views() {
   $handler->display->display_options['sorts']['field_cmtls_event_date_value']['table'] = 'field_data_field_cmtls_event_date';
   $handler->display->display_options['sorts']['field_cmtls_event_date_value']['field'] = 'field_cmtls_event_date_value';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: OG membership: Group gid */
+  /* Contextual filter: OG membership: OG group gid */
   $handler->display->display_options['arguments']['group']['id'] = 'group';
   $handler->display->display_options['arguments']['group']['table'] = 'og_membership';
   $handler->display->display_options['arguments']['group']['field'] = 'group';
@@ -1006,7 +1006,7 @@ function cmtls_event_views_default_views() {
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['header']['area']['tokenize'] = 0;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: OG membership: Group gid */
+  /* Contextual filter: OG membership: OG group gid */
   $handler->display->display_options['arguments']['group']['id'] = 'group';
   $handler->display->display_options['arguments']['group']['table'] = 'og_membership';
   $handler->display->display_options['arguments']['group']['field'] = 'group';
@@ -1094,7 +1094,7 @@ function cmtls_event_views_default_views() {
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['header']['area']['tokenize'] = 0;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: OG membership: Group gid */
+  /* Contextual filter: OG membership: OG group gid */
   $handler->display->display_options['arguments']['group']['id'] = 'group';
   $handler->display->display_options['arguments']['group']['table'] = 'og_membership';
   $handler->display->display_options['arguments']['group']['field'] = 'group';
@@ -1187,7 +1187,7 @@ function cmtls_event_views_default_views() {
   $handler->display->display_options['sorts']['field_cmtls_event_date_value']['field'] = 'field_cmtls_event_date_value';
   $handler->display->display_options['sorts']['field_cmtls_event_date_value']['order'] = 'DESC';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: OG membership: Group gid */
+  /* Contextual filter: OG membership: OG group gid */
   $handler->display->display_options['arguments']['group']['id'] = 'group';
   $handler->display->display_options['arguments']['group']['table'] = 'og_membership';
   $handler->display->display_options['arguments']['group']['field'] = 'group';
@@ -1253,7 +1253,7 @@ function cmtls_event_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('group membership'),
+    t('OG membership from node'),
     t('field_cmtls_application'),
     t('Date'),
     t('All'),
