@@ -29,23 +29,11 @@ function cmtls_event_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'cmtls-cmtls_subscribe' => array(
-          'module' => 'cmtls',
-          'delta' => 'cmtls_subscribe',
-          'region' => 'sidebar_second',
-          'weight' => '-32',
-        ),
         'views-ef8d7e2b65cd38981de33986447f3e1d' => array(
           'module' => 'views',
           'delta' => 'ef8d7e2b65cd38981de33986447f3e1d',
           'region' => 'sidebar_second',
           'weight' => '-31',
-        ),
-        'views-d2652874c19359991568e2594c7fcb4b' => array(
-          'module' => 'views',
-          'delta' => 'd2652874c19359991568e2594c7fcb4b',
-          'region' => 'sidebar_second',
-          'weight' => NULL,
         ),
         'views-cb129c8a19431ae6b2fd1711646e2de2' => array(
           'module' => 'views',
@@ -64,6 +52,12 @@ function cmtls_event_context_default_contexts() {
           'delta' => '53e22d565fc4333e016372c7c33e1bfc',
           'region' => 'sidebar_second',
           'weight' => '-27',
+        ),
+        'views-d2652874c19359991568e2594c7fcb4b' => array(
+          'module' => 'views',
+          'delta' => 'd2652874c19359991568e2594c7fcb4b',
+          'region' => 'sidebar_second',
+          'weight' => '-33',
         ),
         'views-0d26dd0aa81634fc961ec5e8e8191976' => array(
           'module' => 'views',
@@ -113,12 +107,6 @@ function cmtls_event_context_default_contexts() {
           'module' => 'views',
           'delta' => '3edf64118acc6553a9f6254863dbe98d',
           'region' => 'content',
-          'weight' => '-10',
-        ),
-        'cmtls-cmtls_subscribe' => array(
-          'module' => 'cmtls',
-          'delta' => 'cmtls_subscribe',
-          'region' => 'sidebar_first',
           'weight' => '-10',
         ),
         'views-d9e168f4a7cca184af1d56e5bf3f1a03' => array(
