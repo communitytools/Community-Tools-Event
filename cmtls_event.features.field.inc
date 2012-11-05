@@ -351,7 +351,7 @@ function cmtls_event_field_default_fields() {
       'bundle' => 'cmtls_event',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'The start and the end date and time of the event',
+      'description' => '',
       'display' => array(
         'cmtls_teaser' => array(
           'label' => 'hidden',
@@ -818,7 +818,6 @@ function cmtls_event_field_default_fields() {
   t('Groups audience');
   t('Location');
   t('Tags');
-  t('The start and the end date and time of the event');
 
   return $fields;
 }

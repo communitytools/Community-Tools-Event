@@ -119,7 +119,6 @@ function cmtls_event_views_default_views() {
   $handler = $view->new_display('block', 'Attendees block', 'cmtls_event_attendees_block');
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['use_more'] = TRUE;
-  $handler->display->display_options['use_more_text'] = 'All attendees';
   $handler->display->display_options['defaults']['link_display'] = FALSE;
   $handler->display->display_options['link_display'] = 'page';
   $handler->display->display_options['defaults']['pager'] = FALSE;
