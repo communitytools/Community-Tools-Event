@@ -35,11 +35,17 @@ function cmtls_event_context_default_contexts() {
           'region' => 'sidebar_second',
           'weight' => '-31',
         ),
-        'views-cb129c8a19431ae6b2fd1711646e2de2' => array(
+        'views-d2652874c19359991568e2594c7fcb4b' => array(
           'module' => 'views',
-          'delta' => 'cb129c8a19431ae6b2fd1711646e2de2',
+          'delta' => 'd2652874c19359991568e2594c7fcb4b',
           'region' => 'sidebar_second',
-          'weight' => '-29',
+          'weight' => '-30',
+        ),
+        'views-232f47dca370db2ede449d3046af1658' => array(
+          'module' => 'views',
+          'delta' => '232f47dca370db2ede449d3046af1658',
+          'region' => 'sidebar_second',
+          'weight' => NULL,
         ),
         'views-d3b739be3a716e61b54f0c1254eefd60' => array(
           'module' => 'views',
@@ -52,12 +58,6 @@ function cmtls_event_context_default_contexts() {
           'delta' => '53e22d565fc4333e016372c7c33e1bfc',
           'region' => 'sidebar_second',
           'weight' => '-27',
-        ),
-        'views-d2652874c19359991568e2594c7fcb4b' => array(
-          'module' => 'views',
-          'delta' => 'd2652874c19359991568e2594c7fcb4b',
-          'region' => 'sidebar_second',
-          'weight' => '-33',
         ),
         'views-0d26dd0aa81634fc961ec5e8e8191976' => array(
           'module' => 'views',

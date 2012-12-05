@@ -113,6 +113,8 @@ function cmtls_event_field_group_info() {
     'weight' => '14',
     'children' => array(
       0 => 'field_cmtls_location',
+      1 => 'field_cmtls_geometry',
+      2 => 'field_cmtls_address',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
