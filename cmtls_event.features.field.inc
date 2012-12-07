@@ -192,10 +192,16 @@ function cmtls_event_field_default_fields() {
       'description' => '',
       'display' => array(
         'cmtls_teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'addressfield',
+          'settings' => array(
+            'format_handlers' => array(
+              0 => 'address',
+            ),
+            'use_widget_handlers' => 1,
+          ),
+          'type' => 'addressfield_default',
+          'weight' => '4',
         ),
         'default' => array(
           'label' => 'above',
@@ -287,7 +293,7 @@ function cmtls_event_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '16',
+          'weight' => '19',
         ),
         'default' => array(
           'label' => 'above',
@@ -358,7 +364,7 @@ function cmtls_event_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '15',
+          'weight' => '18',
         ),
         'default' => array(
           'label' => 'above',
@@ -529,7 +535,7 @@ function cmtls_event_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '15',
         ),
         'default' => array(
           'label' => 'above',
@@ -616,7 +622,7 @@ function cmtls_event_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '4',
+          'weight' => '5',
         ),
         'default' => array(
           'label' => 'above',
@@ -689,7 +695,7 @@ function cmtls_event_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '12',
+          'weight' => '16',
         ),
         'default' => array(
           'label' => 'above',
@@ -776,7 +782,7 @@ function cmtls_event_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '14',
+          'weight' => '17',
         ),
         'default' => array(
           'label' => 'above',
