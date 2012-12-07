@@ -78,6 +78,11 @@ function cmtls_event_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'cmtls_event';
   $ds_fieldsetting->view_mode = 'cmtls_teaser';
   $ds_fieldsetting->settings = array(
+    'cmtls_comments_count' => array(
+      'weight' => '6',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
     'cmtls_location_indicator' => array(
       'weight' => '3',
       'label' => 'hidden',
@@ -206,6 +211,7 @@ function cmtls_event_ds_layout_settings_info() {
         0 => 'cmtls_location_indicator',
         1 => 'field_cmtls_address',
         2 => 'field_cmtls_tags',
+        3 => 'cmtls_comments_count',
       ),
     ),
     'fields' => array(
@@ -215,6 +221,7 @@ function cmtls_event_ds_layout_settings_info() {
       'cmtls_location_indicator' => 'footer',
       'field_cmtls_address' => 'footer',
       'field_cmtls_tags' => 'footer',
+      'cmtls_comments_count' => 'footer',
     ),
     'classes' => array(),
   );
