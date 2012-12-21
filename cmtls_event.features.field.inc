@@ -46,10 +46,9 @@ function cmtls_event_field_default_fields() {
       'display' => array(
         'cmtls_teaser' => array(
           'label' => 'hidden',
-          'module' => 'text',
           'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '0',
+          'type' => 'hidden',
+          'weight' => '4',
         ),
         'default' => array(
           'label' => 'hidden',
