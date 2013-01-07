@@ -14,8 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2012-11-05 14:12+0200\n"
-"PO-Revision-Date: 2012-11-05 14:12+0200\n"
+"POT-Creation-Date: 2013-01-07 16:02+0200\n"
+"PO-Revision-Date: 2013-01-07 16:02+0200\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Estonian <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
@@ -35,45 +35,45 @@ msgstr ""
 msgid "Community Tools events calendar"
 msgstr ""
 
-#: cmtls_event.features.field.inc:812
+#: cmtls_event.features.field.inc:823
+msgid "Address"
+msgstr "Aadress"
+
+#: cmtls_event.features.field.inc:824
 msgid "Application"
 msgstr "Tööriist"
 
-#: cmtls_event.features.field.inc:813
+#: cmtls_event.features.field.inc:825
 msgid "Attachments"
 msgstr "Manused"
 
-#: cmtls_event.features.field.inc:814
+#: cmtls_event.features.field.inc:826
 msgid "Comment"
 msgstr "Kommentaar"
 
-#: cmtls_event.features.field.inc:815 cmtls_event.views_default.inc:1258
+#: cmtls_event.features.field.inc:827 cmtls_event.views_default.inc:1229
 msgid "Date"
 msgstr "Kuupäev"
 
-#: cmtls_event.features.field.inc:816
+#: cmtls_event.features.field.inc:828
 msgid "Description"
 msgstr "Kirjeldus"
 
-#: cmtls_event.features.field.inc:817
+#: cmtls_event.features.field.inc:829
 msgid "Group content visibility"
 msgstr "Sisu nähtavus"
 
-#: cmtls_event.features.field.inc:818
+#: cmtls_event.features.field.inc:830
 msgid "Groups audience"
 msgstr ""
 
-#: cmtls_event.features.field.inc:819
-msgid "Location"
-msgstr "Asukoht"
+#: cmtls_event.features.field.inc:831
+msgid "Map"
+msgstr "Kaart"
 
-#: cmtls_event.features.field.inc:820
+#: cmtls_event.features.field.inc:832
 msgid "Tags"
 msgstr "Sildid"
-
-#: cmtls_event.features.field.inc:821
-msgid "The start and the end date and time of the event"
-msgstr ""
 
 #: cmtls_event.features.inc:124 cmtls_event.module:16
 msgid "Event"
@@ -87,247 +87,247 @@ msgstr ""
 msgid "Title"
 msgstr "Pealkiri"
 
-#: cmtls_event.views_default.inc:144;311;1248
+#: cmtls_event.views_default.inc:143;282;1219
 msgid "Master"
 msgstr ""
 
-#: cmtls_event.views_default.inc:145
+#: cmtls_event.views_default.inc:144
 msgid "Attendees"
 msgstr ""
 
-#: cmtls_event.views_default.inc:146
+#: cmtls_event.views_default.inc:145
 msgid "All attendees"
 msgstr ""
 
-#: cmtls_event.views_default.inc:147;314;1251
+#: cmtls_event.views_default.inc:146;285;1222
 msgid "Apply"
 msgstr "Rakenda"
 
-#: cmtls_event.views_default.inc:148;315;1252
+#: cmtls_event.views_default.inc:147;286;1223
 msgid "Reset"
 msgstr "Lähtesta"
 
-#: cmtls_event.views_default.inc:149;316;1253
+#: cmtls_event.views_default.inc:148;287;1224
 msgid "Sort by"
 msgstr "Sorteerimise alus"
 
-#: cmtls_event.views_default.inc:150;317;1254
+#: cmtls_event.views_default.inc:149;288;1225
 msgid "Asc"
 msgstr "Kasvav"
 
-#: cmtls_event.views_default.inc:151;318;1255
+#: cmtls_event.views_default.inc:150;289;1226
 msgid "Desc"
 msgstr "Kahanev"
 
-#: cmtls_event.views_default.inc:152;1264
+#: cmtls_event.views_default.inc:151;1235
 msgid "Items per page"
 msgstr "Kirjeid lehel"
 
-#: cmtls_event.views_default.inc:153;1265
+#: cmtls_event.views_default.inc:152;1236
 msgid "- All -"
 msgstr "- Kõik -"
 
-#: cmtls_event.views_default.inc:154;1266
+#: cmtls_event.views_default.inc:153;1237
 msgid "Offset"
 msgstr "Nihe"
 
-#: cmtls_event.views_default.inc:155
+#: cmtls_event.views_default.inc:154
 msgid "user flagged content"
 msgstr ""
 
-#: cmtls_event.views_default.inc:156;319;1259
+#: cmtls_event.views_default.inc:155;290;1230
 msgid "All"
 msgstr "Kõik"
 
-#: cmtls_event.views_default.inc:157
+#: cmtls_event.views_default.inc:156
 msgid "Attendees for \"%1\""
 msgstr ""
 
-#: cmtls_event.views_default.inc:158
+#: cmtls_event.views_default.inc:157
 msgid "All attendees page"
 msgstr ""
 
-#: cmtls_event.views_default.inc:159
+#: cmtls_event.views_default.inc:158
 msgid "Shows all users who have flagged themselves as attending of an event."
 msgstr ""
 
-#: cmtls_event.views_default.inc:160;313;1250
+#: cmtls_event.views_default.inc:159;284;1221
 msgid "more"
 msgstr "veel"
 
-#: cmtls_event.views_default.inc:161
+#: cmtls_event.views_default.inc:160
 msgid "Attendees block"
 msgstr ""
 
-#: cmtls_event.views_default.inc:312
+#: cmtls_event.views_default.inc:283
 msgid "Element"
 msgstr ""
 
-#: cmtls_event.views_default.inc:320
+#: cmtls_event.views_default.inc:291
 msgid "Attend flag block"
 msgstr ""
 
-#: cmtls_event.views_default.inc:321
+#: cmtls_event.views_default.inc:292
 msgid "Attending"
 msgstr ""
 
-#: cmtls_event.views_default.inc:322
+#: cmtls_event.views_default.inc:293
 msgid "flag"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1249 cmtls_event.module:13
+#: cmtls_event.views_default.inc:1220 cmtls_event.module:13
 msgid "Events"
 msgstr "Sündmused"
 
-#: cmtls_event.views_default.inc:1256
+#: cmtls_event.views_default.inc:1227
 msgid "OG membership from node"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1257
+#: cmtls_event.views_default.inc:1228
 msgid "field_cmtls_application"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1260
+#: cmtls_event.views_default.inc:1231
 msgid "Events for %1"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1261
+#: cmtls_event.views_default.inc:1232
 msgid "Events in %2 for %1"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1262
+#: cmtls_event.views_default.inc:1233
 msgid "Global page"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1263
+#: cmtls_event.views_default.inc:1234
 msgid "Page with all events in all groups"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1267
+#: cmtls_event.views_default.inc:1238
 msgid "<h2>Today</h2>"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1268
+#: cmtls_event.views_default.inc:1239
 msgid "Global tomorrow attachment"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1269
+#: cmtls_event.views_default.inc:1240
 msgid "Tomorrow"
-msgstr ""
+msgstr "Homme"
 
-#: cmtls_event.views_default.inc:1270
+#: cmtls_event.views_default.inc:1241
 msgid "Events tomorrow from all groups and apps"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1271
+#: cmtls_event.views_default.inc:1242
 msgid "<h2>Tomorrow</h2>"
-msgstr ""
+msgstr "<h2>Homme</h2>"
 
-#: cmtls_event.views_default.inc:1272
+#: cmtls_event.views_default.inc:1243
 msgid "Global upcoming attachment"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1273
+#: cmtls_event.views_default.inc:1244
 msgid "Upcoming"
-msgstr "Saabuvad"
+msgstr "Tulevased"
 
-#: cmtls_event.views_default.inc:1274
+#: cmtls_event.views_default.inc:1245
 msgid "All global events after tomorrow"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1275
+#: cmtls_event.views_default.inc:1246
 msgid "<h2>Upcoming</h2>"
-msgstr ""
+msgstr "<h2>Tulevased</h2> "
 
-#: cmtls_event.views_default.inc:1276
+#: cmtls_event.views_default.inc:1247
 msgid "Application content calendar block"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1277
+#: cmtls_event.views_default.inc:1248
 msgid "All events in an application as calendar"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1278
+#: cmtls_event.views_default.inc:1249
 msgid "Application content list block "
 msgstr ""
 
-#: cmtls_event.views_default.inc:1279
+#: cmtls_event.views_default.inc:1250
 msgid "Global past events attachment"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1280
+#: cmtls_event.views_default.inc:1251
 msgid "Previous events"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1281
+#: cmtls_event.views_default.inc:1252
 msgid "All past events"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1282
+#: cmtls_event.views_default.inc:1253
 msgid "<h2>Previous</h2>"
 msgstr " <h2>Eelmine</h2> "
 
-#: cmtls_event.views_default.inc:1283
+#: cmtls_event.views_default.inc:1254
 msgid "Past events for %1"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1284
+#: cmtls_event.views_default.inc:1255
 msgid "Past events in %2 for %1"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1285
+#: cmtls_event.views_default.inc:1256
 msgid "Global all upcoming"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1286
+#: cmtls_event.views_default.inc:1257
 msgid "Upcoming events"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1287
+#: cmtls_event.views_default.inc:1258
 msgid "Page with all upcoming events in all groups"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1288
+#: cmtls_event.views_default.inc:1259
 msgid "Upcoming events for %1"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1289
+#: cmtls_event.views_default.inc:1260
 msgid "Upcoming events in %2 for %1"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1290
+#: cmtls_event.views_default.inc:1261
 msgid "Global all past"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1291
+#: cmtls_event.views_default.inc:1262
 msgid "Past events"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1292
+#: cmtls_event.views_default.inc:1263
 msgid "Page with all past events in all groups"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1293
+#: cmtls_event.views_default.inc:1264
 msgid "Local tomorrow attachment"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1294
+#: cmtls_event.views_default.inc:1265
 msgid "Events tomorrow by group or application"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1295
+#: cmtls_event.views_default.inc:1266
 msgid "Local upcoming attachment"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1296
+#: cmtls_event.views_default.inc:1267
 msgid "Events after tomorrow by group, application"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1297
+#: cmtls_event.views_default.inc:1268
 msgid "Local past events attachment"
 msgstr ""
 
-#: cmtls_event.views_default.inc:1298
+#: cmtls_event.views_default.inc:1269
 msgid "Past events in a group, application"
 msgstr ""
 
