@@ -54,8 +54,8 @@ function cmtls_event_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'field_cmtls_attachments',
-      2 => 'field_cmtls_tags',
-      3 => 'field_cmtls_event_date',
+      2 => 'field_cmtls_event_date',
+      3 => 'field_cmtls_tags',
       4 => 'title',
     ),
     'format_type' => 'htab',
@@ -83,8 +83,8 @@ function cmtls_event_field_group_info() {
     'label' => 'Hidden',
     'weight' => '9',
     'children' => array(
-      0 => 'group_audience',
-      1 => 'field_cmtls_application',
+      0 => 'field_cmtls_application',
+      1 => 'group_audience',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -112,9 +112,9 @@ function cmtls_event_field_group_info() {
     'label' => 'Location',
     'weight' => '14',
     'children' => array(
-      0 => 'field_cmtls_location',
+      0 => 'field_cmtls_address',
       1 => 'field_cmtls_geometry',
-      2 => 'field_cmtls_address',
+      2 => 'field_cmtls_map_marker',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
