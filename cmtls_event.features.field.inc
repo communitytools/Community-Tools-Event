@@ -246,7 +246,7 @@ function cmtls_event_field_default_fields() {
   $fields['node-cmtls_event-field_cmtls_application'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_cmtls_application',
@@ -267,6 +267,13 @@ function cmtls_event_field_default_fields() {
       'settings' => array(
         'referenceable_types' => array(
           'cmtls_app' => 'cmtls_app',
+          'cmtls_event' => 0,
+          'cmtls_group' => 0,
+          'cmtls_location' => 0,
+          'cmtls_post' => 0,
+          'media_gallery' => 0,
+          'page' => 0,
+          'webform' => 0,
         ),
         'view' => array(
           'args' => array(),
@@ -564,7 +571,7 @@ function cmtls_event_field_default_fields() {
         'module' => 'geofield',
         'settings' => array(
           'data_storage' => 'collection',
-          'openlayers_map' => 'geofield_widget_map',
+          'openlayers_map' => 'cmtls_geometry_widget',
         ),
         'type' => 'geofield_openlayers',
         'weight' => '34',
@@ -633,7 +640,7 @@ function cmtls_event_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_cmtls_map_marker',
-      'label' => 'Marker',
+      'label' => 'Map layer',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -731,7 +738,7 @@ function cmtls_event_field_default_fields() {
   $fields['node-cmtls_event-group_audience'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'group_audience',
@@ -783,7 +790,7 @@ function cmtls_event_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'group_audience',
       'label' => 'Groups audience',
-      'required' => FALSE,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -800,6 +807,7 @@ function cmtls_event_field_default_fields() {
         ),
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'og',
         'settings' => array(
           'opt_group' => 'auto',
@@ -905,7 +913,7 @@ function cmtls_event_field_default_fields() {
   t('Group content visibility');
   t('Groups audience');
   t('Map');
-  t('Marker');
+  t('Map layer');
   t('Tags');
 
   return $fields;
